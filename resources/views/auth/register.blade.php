@@ -53,7 +53,7 @@
                 <label for="password" class="form-label fw-semibold">Password</label>
                 <div class="input-group">
                     <span class="input-group-text bg-light"><i class="bi bi-lock"></i></span>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="••••••••" required>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@
             <!-- Login Link -->
             <div class="text-center mt-3">
                 <small class="text-muted">Sudah punya akun?</small>
-                <a href="{{ route('login') }}" class="fw-semibold text-decoration-none">Yo login sekarang</a>
+                <a href="{{ route('login') }}" class="fw-semibold text-decoration-none">login sekarang</a>
             </div>
         </form>
     </div>

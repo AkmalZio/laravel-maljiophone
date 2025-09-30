@@ -12,8 +12,8 @@
                     style="width: 70px; height: 70px;">
                     <i class="bi bi-shop me-1" style="font-size: 2rem;"></i>
                 </div>
-                <h3 class="mt-3 fw-bold">Welcome Back</h3>
-                <p class="text-muted">Masuk untuk melanjutkan belanja</p>
+                <h3 class="mt-3 fw-bold">Selamat Datang!</h3>
+                <p class="text-muted">Silahkan login untuk berbelanja</p>
             </div>
 
             <!-- Alert Error -->
@@ -44,7 +44,7 @@
                     <label for="password" class="form-label fw-semibold">Password</label>
                     <div class="input-group">
                         <span class="input-group-text bg-light"><i class="bi bi-lock"></i></span>
-                        <input type="password" name="password" class="form-control" id="password" placeholder="••••••••"
+                        <input type="password" name="password" class="form-control" id="password" placeholder="password"
                             required>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                 <!-- Link Register -->
                 <div class="text-center mt-3">
                     <small class="text-muted">Belum punya akun?</small>
-                    <a href="{{ route('register') }}" class="fw-semibold text-decoration-none"> Yo daftar sekarang</a>
+                    <a href="{{ route('register') }}" class="fw-semibold text-decoration-none"> daftar sekarang</a>
                 </div>
             </form>
         </div>

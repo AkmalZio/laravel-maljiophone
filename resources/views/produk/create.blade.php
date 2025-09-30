@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Tambah Makanan')
+@section('title', 'MaljioPhone - Tambah')
 
 @section('content')
 <div class="container mt-5 mb-5">

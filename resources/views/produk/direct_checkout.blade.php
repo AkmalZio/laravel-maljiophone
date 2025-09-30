@@ -8,11 +8,36 @@
         <i class="bi bi-bag-check me-2"></i> Checkout
     </h2>
 
-    <form action="{{ route('cart.processCheckout') }}" method="POST">
+    <form action="{{ route('produk.processDirectPurchase', $produk->id) }}" method="POST">
         @csrf
 
-        {{-- Daftar Produk --}}
-        <div class="table-responsive shadow-sm rounded-3 mb-4"> <table class="table table-hover align-middle"> <thead class="table-primary"> <tr> <th>No</th> <th>Produk</th> <th>Harga</th> <th>Jumlah</th> <th>Total</th> </tr> </thead> <tbody> @foreach($carts as $index => $cart) <tr> <td>{{ $index + 1 }}</td> <td>{{ $cart->produk->nama }}</td> <td>Rp{{ number_format($cart->produk->harga, 0, ',', '.') }}</td> <td>{{ $cart->quantity }}</td> <td>Rp{{ number_format($cart->produk->harga * $cart->quantity, 0, ',', '.') }}</td> </tr> @endforeach </tbody> </table> </div>
+        {{-- Produk yang dibeli --}}
+        <div class="table-responsive shadow-sm rounded-3 mb-4">
+            <table class="table table-hover align-middle">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Produk</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ $produk->nama }}</td>
+                        <td>Rp{{ number_format($produk->harga, 0, ',', '.') }}</td>
+                        <td>
+                            {{-- jumlah tetap 1, tidak bisa diubah --}}
+                            1
+                            <input type="hidden" name="quantity" value="1">
+                        </td>
+                        <td>
+                            <span class="text-primary fw-bold">Rp{{ number_format($produk->harga, 0, ',', '.') }}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         {{-- Form Data Pembeli --}}
         <div class="mb-3">
@@ -46,7 +71,7 @@
         </div>
 
         <div class="text-end">
-            <button type="submit" class="btn btn-primary btn-lg rounded-3 shadow">
+            <button type="submit" class="btn btn-success btn-lg rounded-3 shadow">
                 <i class="bi bi-check-circle me-1"></i> Buat Pesanan
             </button>
         </div>

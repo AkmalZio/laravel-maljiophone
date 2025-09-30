@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'MaljioPhone - Edit')
+
 @section('content')
 <div class="container mt-5 mb-5">
     <div class="card shadow-lg border-0 rounded-4">
