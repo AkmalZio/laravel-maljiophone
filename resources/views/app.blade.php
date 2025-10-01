@@ -191,7 +191,7 @@
                 <div class="col-md-4 mb-3">
                     <h6 class="fw-bold">Kontak Kami</h6>
                     <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Jl. Golf, Ciriung, Cibinong, Bogor</p>
-                    <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>(+62) 123-4567-890</p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>(+62) 858-9319-1990</p>
                     <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>maljiophone@gmail.com</p>
                 </div>
 
